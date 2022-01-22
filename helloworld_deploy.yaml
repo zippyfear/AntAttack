@@ -2,17 +2,17 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: example1
-  name: example1
+    app: AntAttack1
+  name: AntAttack1
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: example1
+      app: AntAttack1
   template:
     metadata:
       labels:
-        app: example1
+        app: AntAttack1
     spec:
       containers:
       - image: nginx:latest
