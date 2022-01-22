@@ -5,7 +5,7 @@ metadata:
     app: example1
   name: example1
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: example1
@@ -15,5 +15,5 @@ spec:
         app: example1
     spec:
       containers:
-      - image: nginx:latest
-        name: nginx
+      - image: hello-world:latest
+        name: hello
