@@ -1,12 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: <my-nodeport-service>
+  name: guestbook
   labels:
-    <my-label-key>: <my-label-value>
 spec:
   selector:
-    <my-selector-key>: <my-selector-value>
   type: NodePort
   ports:
    - port: <8081>
